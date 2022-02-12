@@ -1,0 +1,10 @@
+.input_paragraph{
+    color: white;
+    font: 1em sans-serif;
+}
+
+.input_text_div{
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+}

@@ -37,9 +37,19 @@ const authSlice = createSlice({
     },
   },
 });
+const paragraphSlice = createSlice({
+  name: "paragraph",
+  initialState: "",
+  reducers: {
+    set(state, action){
+      return  state = action.payload.value
+    }
+  }
+})
 const store = configureStore({
-  reducer: { counter: counterSlice.reducer, auth: authSlice.reducer },
+  reducer: { counter: counterSlice.reducer, auth: authSlice.reducer, paragraph: paragraphSlice.reducer },
 });
 export const counterActions = counterSlice.actions;
 export const authActions = authSlice.actions
+export const paragraphActions = paragraphSlice.actions
 export default store;
